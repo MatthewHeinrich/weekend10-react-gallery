@@ -35,107 +35,107 @@ const galleryItems = [
     description: 'A park just outside of the Musee Louvre, Paris, France.',
     likes: 1,
   },
-//   {
-//     id: 7,
-//     path: 'images/versailles_ceiling.jpg',
-//     description: 'One of the many ornate ceilings of Versailles.',
-//     likes: 0,
-//   },
-//   {
-//     id: 8,
-//     path: 'images/thomas_jefferson.jpg',
-//     description:
-//       'Statue of Thomas Jefferson outside of the Musee Monmart, Paris, France.',
-//     likes: 0,
-//   },
-//   {
-//     id: 9,
-//     path: 'images/rodin_three_men.jpg',
-//     description: 'Rodin sculpture, Musee Rodin, Paris, France.',
-//     likes: 0,
-//   },
-//   {
-//     id: 10,
-//     path: 'images/rodin_woman.jpg',
-//     description: 'Rodin sculpture, Musee Rodin, Paris, France.',
-//     likes: 0,
-//   },
-//   {
-//     id: 11,
-//     path: 'images/royal_cottages_versailles.jpg',
-//     description: `"Cottages" built for the Queen of France and her three closest friends. Versailles, France.`,
-//     likes: 2,
-//   },
-//   {
-//     id: 12,
-//     path: 'images/gazebo.jpg',
-//     description: 'Marble gazebo in the gardens of Versailles, France.',
-//     likes: 3,
-//   },
-//   {
-//     id: 13,
-//     path: 'images/acting_stupid.jpg',
-//     description: 'Chad being a dork.',
-//     likes: 0,
-//   },
-//   {
-//     id: 14,
-//     path: 'images/actual_restaurant.jpg',
-//     description: 'Another weird restaurant in Pristina.',
-//     likes: 0,
-//   },
-//   {
-//     id: 15,
-//     path: 'images/album_cover.jpg',
-//     description: 'Slightly modified painting from El Paso Museum of Art.',
-//     likes: 0,
-//   },
-//   {
-//     id: 16,
-//     path: 'alexander_the_great_square.jpg',
-//     description: 'Statue of Alexander the Great in Skopje, Macedonia.',
-//     likes: 0,
-//   },
-//   {
-//     id: 17,
-//     path: 'images/bad_neighbor.jpg',
-//     description: 'Moose that liked to hang out in my front yard in Colorado.',
-//     likes: 0,
-//   },
-//   {
-//     id: 18,
-//     path: 'images/bald_barista.jpg',
-//     description:
-//       'Owner of The Bald Barista Coffee Shop in Dublin. Yes, he has a tattoo of the shop logo on the back of his head.',
-//     likes: 0,
-//   },
-//   {
-//     id: 19,
-//     path: 'images/best_steak.jpg',
-//     description:
-//       'Three steaks stacked on a potato pancake-ish dish. Cost about $40 US in Skopje, Macedonia.',
-//     likes: 0,
-//   },
-//   {
-//     id: 20,
-//     path: 'images/birdseed_thief.jpg',
-//     description: 'Ground squirrel that liked to steal all of my birdseed.',
-//     likes: 0,
-//   },
-//   {
-//     id: 21,
-//     path: 'images/black_madonna.jpg',
-//     description:
-//       '15th Century religious statue, referred to a "Black Madonna."',
-//     likes: 0,
-//   },
-//   {
-//     id: 22,
-//     path: 'images/black_madonna_2.jpg',
-//     description:
-//       '15th Century religious statue, referred to a "Black Madonna."',
-//     likes: 0,
-//   },
+  {
+    id: 7,
+    path: 'images/versailles_ceiling.jpg',
+    description: 'One of the many ornate ceilings of Versailles.',
+    likes: 0,
+  },
+  {
+    id: 8,
+    path: 'images/thomas_jefferson.jpg',
+    description:
+      'Statue of Thomas Jefferson outside of the Musee Monmart, Paris, France.',
+    likes: 0,
+  },
+  {
+    id: 9,
+    path: 'images/rodin_three_men.jpg',
+    description: 'Rodin sculpture, Musee Rodin, Paris, France.',
+    likes: 0,
+  },
+  {
+    id: 10,
+    path: 'images/rodin_woman.jpg',
+    description: 'Rodin sculpture, Musee Rodin, Paris, France.',
+    likes: 0,
+  },
+  {
+    id: 11,
+    path: 'images/royal_cottages_versailles.jpg',
+    description: `"Cottages" built for the Queen of France and her three closest friends. Versailles, France.`,
+    likes: 2,
+  },
+  {
+    id: 12,
+    path: 'images/gazebo.jpg',
+    description: 'Marble gazebo in the gardens of Versailles, France.',
+    likes: 3,
+  },
+  {
+    id: 13,
+    path: 'images/acting_stupid.jpg',
+    description: 'Chad being a dork.',
+    likes: 0,
+  },
+  {
+    id: 14,
+    path: 'images/actual_restaurant.jpg',
+    description: 'Another weird restaurant in Pristina.',
+    likes: 0,
+  },
+  {
+    id: 15,
+    path: 'images/album_cover.jpg',
+    description: 'Slightly modified painting from El Paso Museum of Art.',
+    likes: 0,
+  },
+  // {
+  //   id: 16,
+  //   path: 'alexander_the_great_square.jpg',
+  //   description: 'Statue of Alexander the Great in Skopje, Macedonia.',
+  //   likes: 0,
+  // },
+  {
+    id: 17,
+    path: 'images/bad_neighbor.jpg',
+    description: 'Moose that liked to hang out in my front yard in Colorado.',
+    likes: 0,
+  },
+  {
+    id: 18,
+    path: 'images/bald_barista.jpg',
+    description:
+      'Owner of The Bald Barista Coffee Shop in Dublin. Yes, he has a tattoo of the shop logo on the back of his head.',
+    likes: 0,
+  },
+  {
+    id: 19,
+    path: 'images/best_steak.jpg',
+    description:
+      'Three steaks stacked on a potato pancake-ish dish. Cost about $40 US in Skopje, Macedonia.',
+    likes: 0,
+  },
+  {
+    id: 20,
+    path: 'images/birdseed_thief.jpg',
+    description: 'Ground squirrel that liked to steal all of my birdseed.',
+    likes: 0,
+  },
+  {
+    id: 21,
+    path: 'images/black_madonna.jpg',
+    description:
+      '15th Century religious statue, referred to a "Black Madonna."',
+    likes: 0,
+  },
+  {
+    id: 22,
+    path: 'images/black_madonna_2.jpg',
+    description:
+      '15th Century religious statue, referred to a "Black Madonna."',
+    likes: 0,
+  },
 //   { id: 23, path: 'images/bw_park_kuwait.jpg', description: 'Chad in a park in Kuwait City.', likes: 0 },
 //   { id: 24, path: 'images/cat_mouse_cathedral.jpg', description: 'Mummified cat and mouse carcass found in an organ pipe in Cathedral of Dublin, Ireland.', likes: 0 },
 //   { id: 25, path: 'images/chad_eiffel_tower.jpg', description: 'Chad in front of the Eiffel Tower in Paris, France.', likes: 0 },
