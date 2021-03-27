@@ -9,7 +9,19 @@ function App() {
 
   useEffect( () =>{
     getGallery();
+    updateGallery();
   },[])
+
+  let updateGallery = ()=>{
+    // axios put call
+    axios.put( `/gallery/like/:id` ).then( ( response )=>{
+      console.log( 'back from PUT with:', response );
+    }).catch( ( err )=>{
+      console.log( err );
+      alert( 'err' );
+    })
+  }
+
 
   let getGallery = () => {
     axios.get( '/gallery' ).then( ( response ) =>{
@@ -21,6 +33,7 @@ function App() {
     })
   }
 
+  
     return (
       <div className="App">
         <header className="App-header">
