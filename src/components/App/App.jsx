@@ -18,7 +18,7 @@ function App() {
       console.log( 'back from PUT with:', response );
     }).catch( ( err )=>{
       console.log( err );
-      alert( 'err' );
+      alert( 'Ope not quite' );
     })
   }
 
@@ -29,7 +29,7 @@ function App() {
       setGallery( response.data );
     }).catch( (err)=>{
       console.log(err);
-      alert( 'Sorry Please Try Again' );
+      alert( 'Ope try again' );
     })
   }
 

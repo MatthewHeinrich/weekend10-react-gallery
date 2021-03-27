@@ -3,25 +3,25 @@ import React from 'react';
 
 function GalleryItem(props) {
 
-    const [ showDescription, setShowDiscription ] = useState( false );
+    const [ showDescription, setShowDescription ] = useState( false );
     const [ clicks, setClicks ] = useState( 0 );
     
     let displayDescripton = () =>{
         if( showDescription ){
             return( props.item.description );
         } else {
-            return( props.item.path );
+            return( <img src={props.item.path}></img> );
             }
         }
         
 
         let handleClick = () =>{
-            console.log( 'in handleClick' );
+            console.log( 'in handleClick');
             setClicks( clicks +1 );
         }
 
     let toggleDescription = () =>{
-        setShowDiscription( !showDescription );
+        setShowDescription( !showDescription );
     }
     return (
         <div>
