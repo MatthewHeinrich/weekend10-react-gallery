@@ -10,7 +10,7 @@
 
 ## Screenshot 
 
-![image](https://user-images.githubusercontent.com/74434237/112762518-a84ed500-8fc5-11eb-9584-937cf7a9d2c2.png)
+![image](https://user-images.githubusercontent.com/74434237/112762674-8570f080-8fc6-11eb-9b45-bf48500d8187.png)
 
 ## Used
 
