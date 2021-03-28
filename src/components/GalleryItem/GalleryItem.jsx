@@ -15,8 +15,9 @@ function GalleryItem(props) {
             return( props.item.description );
         } else {
             return( <img
-            width={300}
-            height={300}
+            className='image'
+            width={120}
+            height={120}
             src={props.item.path}></img> );
             }
         } // returns either image or description of image
@@ -43,9 +44,9 @@ function GalleryItem(props) {
     }
     return (
         <div>
-            <div  onClick={ toggleDescription }> { displayDescripton() }</div>
+            <div onClick={ toggleDescription }> { displayDescripton() }</div>
             <p> Likes: { clicks } </p>
-            <button onClick={ handleClick }>Like</button>
+            <button className="button" onClick={ handleClick }>Like</button>
         </div>
     )
 } // end GalleryItem

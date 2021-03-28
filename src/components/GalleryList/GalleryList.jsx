@@ -4,10 +4,10 @@ function GalleryList(props) {
     
     return (
         <>
-            <ul>
+            <div className="galleryList">
                 
                 { props.gallery.map( ( item, index ) => <GalleryItem item={item} key={index}/> ) }
-            </ul>
+            </div>
         </>
     ) // returns item list 
 } // end GalleryList 

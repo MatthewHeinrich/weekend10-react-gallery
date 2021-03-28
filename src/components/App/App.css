@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color:honeydew;
 }
 
 .App-header {
@@ -13,5 +14,20 @@
   font-size: 1.5em;
 }
 
+.galleryList{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 0 50px;
+    grid-auto-rows: 200px;
+    
+    
+}
 
+.image{
+  border: solid black;
 
+}
+
+.button{
+  margin-bottom: 10em;
+}
