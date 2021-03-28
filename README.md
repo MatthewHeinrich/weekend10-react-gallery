@@ -6,7 +6,7 @@
 
 - This project takes an array of images with a description and like counter and displays on DOM 
 - User can click on the displayed image and toggle between the description and back to the image
-- Using routes, the image and description with the number of likes the photo recieved is retreived and updated to the server
+- Using routes, the image and description with the number of likes the photo recieved is retrieved and updated to the server
 
 
 ## Screenshot 
