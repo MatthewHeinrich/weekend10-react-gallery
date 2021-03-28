@@ -9,22 +9,9 @@ function App() {
 
   useEffect( () =>{
     getGallery();
-    // updateGallery();
+    
   },[])
 
-  
-
-  // let updateGallery = ()=>{
-  //   // axios put call
-  //   axios.put( `/gallery/like/:id` ).then( ( response )=>{
-  //     console.log( 'back from PUT with:', response );
-  //      // setClick(response.likes)
-  //     // getGallery();
-  //   }).catch( ( err )=>{
-  //     console.log( err );
-  //     alert( 'Ope not quite' );
-  //   })
-  // }
 
 
   let getGallery = () => {

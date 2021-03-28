@@ -19,15 +19,15 @@ function GalleryItem(props) {
             height={300}
             src={props.item.path}></img> );
             }
-        }
+        } // returns either image or description of image
         
 
         let handleClick = ( event ) =>{
             let id = props.item.id;
             console.log( 'in handleClick', id );
-
+            // displays number of clicks on DOM
             setClicks( clicks +1 );
-            
+            // updates server side like count 
             axios.put( `/gallery/like/` + id ).then( ( response )=>{
                 console.log( 'back from PUT' );
                 
@@ -36,7 +36,7 @@ function GalleryItem(props) {
                 alert( 'Ope not quite' );
             })
         
-        }
+        } // end handleClick
 
     let toggleDescription = () =>{
         setShowDescription( !showDescription );
@@ -48,10 +48,7 @@ function GalleryItem(props) {
             <button onClick={ handleClick }>Like</button>
         </div>
     )
-}
+} // end GalleryItem
 
 export default GalleryItem;
 
-{/* <img src={props.item.path} ></img> {props.item.description} {props.item.likes} */}
-
-// {gallery.map( (item, index)=> <li key={index}> <img src={item.path} ></img> {item.description} {item.likes} </li> )}
