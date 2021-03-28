@@ -1,6 +1,7 @@
 import GalleryItem from '../GalleryItem/GalleryItem'
 
 function GalleryList(props) {
+    
     return (
         <>
             <ul>

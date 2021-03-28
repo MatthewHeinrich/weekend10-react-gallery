@@ -9,22 +9,22 @@ function App() {
 
   useEffect( () =>{
     getGallery();
-    updateGallery();
+    // updateGallery();
   },[])
 
   
 
-  let updateGallery = ()=>{
-    // axios put call
-    axios.put( `/gallery/like/:id` ).then( ( response )=>{
-      console.log( 'back from PUT with:', response );
-      // setClick(response.likes)
-      // getGallery();
-    }).catch( ( err )=>{
-      console.log( err );
-      alert( 'Ope not quite' );
-    })
-  }
+  // let updateGallery = ()=>{
+  //   // axios put call
+  //   axios.put( `/gallery/like/:id` ).then( ( response )=>{
+  //     console.log( 'back from PUT with:', response );
+  //      // setClick(response.likes)
+  //     // getGallery();
+  //   }).catch( ( err )=>{
+  //     console.log( err );
+  //     alert( 'Ope not quite' );
+  //   })
+  // }
 
 
   let getGallery = () => {
@@ -44,9 +44,9 @@ function App() {
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
         <p>Gallery goes here</p>
-        <ul>
+        <div className="gallery">
           <GalleryList gallery = {gallery} />
-        </ul>
+        </div>
       </div>
     );
 }

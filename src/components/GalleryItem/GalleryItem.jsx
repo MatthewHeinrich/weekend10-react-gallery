@@ -1,11 +1,13 @@
-import { useState } from 'react';
-import React from 'react';
+import React, { useState } from 'react';
+// import React from 'react';
 import axios from 'axios';
+
 
 function GalleryItem(props) {
 
     const [ showDescription, setShowDescription ] = useState( false );
     const [ clicks, setClicks ] = useState( 0 );
+    
     
     
     let displayDescripton = () =>{
@@ -20,23 +22,20 @@ function GalleryItem(props) {
         }
         
 
-        let handleClick = () =>{
-            console.log( 'in handleClick');
-            setClicks( clicks +1 );
-            // setShowDescription( [ ...showDescription, newLikes ] );
-            // setTempName( event.target.value );
+        let handleClick = ( event ) =>{
+            let id = props.item.id;
+            console.log( 'in handleClick', id );
 
-            // const newLikes = {
-            //     likes: tempLikes
-            // }
-            axios.put( `/gallery/like/:id` ).then( ( response )=>{
-                console.log( 'back from PUT with:', response.data );
-                // setClick(response.likes)
-                // getGallery();
+            setClicks( clicks +1 );
+            
+            axios.put( `/gallery/like/` + id ).then( ( response )=>{
+                console.log( 'back from PUT' );
+                
             }).catch( ( err )=>{
                 console.log( err );
                 alert( 'Ope not quite' );
             })
+        
         }
 
     let toggleDescription = () =>{
