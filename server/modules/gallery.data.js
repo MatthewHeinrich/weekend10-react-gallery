@@ -15,7 +15,7 @@ const galleryItems = [
     id: 3,
     path: 'images/firey_sunset.jpg',
     description: `A beautiful sunset taken from my porch at my house in Colorado.`,
-    likes: 2,
+    likes: 0,
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const galleryItems = [
     id: 6,
     path: 'images/park_near_louvre.jpg',
     description: 'A park just outside of the Musee Louvre, Paris, France.',
-    likes: 1,
+    likes: 0,
   },
   {
     id: 7,
@@ -64,13 +64,13 @@ const galleryItems = [
     id: 11,
     path: 'images/royal_cottages_versailles.jpg',
     description: `"Cottages" built for the Queen of France and her three closest friends. Versailles, France.`,
-    likes: 2,
+    likes: 0,
   },
   {
     id: 12,
     path: 'images/gazebo.jpg',
     description: 'Marble gazebo in the gardens of Versailles, France.',
-    likes: 3,
+    likes: 0,
   },
   {
     id: 13,

@@ -9,8 +9,11 @@ function App() {
 
   useEffect( () =>{
     getGallery();
-    
+    // updateGallery();
   },[])
+
+  
+
 
 
 
@@ -32,7 +35,8 @@ function App() {
         </header>
         <p>Gallery goes here</p>
         <div className="gallery">
-          <GalleryList gallery = {gallery} />
+          <GalleryList gallery = {gallery} getGallery = {getGallery} />
+
         </div>
       </div>
     );

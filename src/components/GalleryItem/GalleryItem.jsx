@@ -3,10 +3,11 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 
+
 function GalleryItem(props) {
 
     const [ showDescription, setShowDescription ] = useState( false );
-    const [ clicks, setClicks ] = useState( 0 );
+    // const [ clicks, setClicks ] = useState( 0 );
     
     
     
@@ -27,11 +28,11 @@ function GalleryItem(props) {
             let id = props.item.id;
             console.log( 'in handleClick', id );
             // displays number of clicks on DOM
-            setClicks( clicks +1 );
+            // setClicks( props.item.likes );
             // updates server side like count 
             axios.put( `/gallery/like/` + id ).then( ( response )=>{
                 console.log( 'back from PUT' );
-                
+                props.getGallery();
             }).catch( ( err )=>{
                 console.log( err );
                 alert( 'Ope not quite' );
@@ -45,7 +46,7 @@ function GalleryItem(props) {
     return (
         <div>
             <div onClick={ toggleDescription }> { displayDescripton() }</div>
-            <p> Likes: { clicks } </p>
+            <p> Likes: {props.item.likes}  </p>
             <button className="button" onClick={ handleClick }>Like</button>
         </div>
     )
